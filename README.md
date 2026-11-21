@@ -24,6 +24,7 @@ Node 22. Solo `.jsx` e `.js`, niente TypeScript. Vite 8, React 19, Tailwind 4, F
 ## Pubblicazione
 
 Il sito è su Netlify: `netlify.toml` lancia `npm run build` e pubblica `dist/`.
+È un pacchetto solo: il motore è collegato come dipendenza locale (`file:`), non come workspace, così Netlify costruisce l'app e non il motore.
 La demo è fuori dai motori di ricerca (`noindex`), ma chi ha il link la vede.
 
 ## Struttura
