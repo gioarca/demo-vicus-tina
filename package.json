@@ -1,0 +1,39 @@
+{
+  "name": "vicus-tina",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Vicus per Tina: pulizie, manutenzione, case, famiglie, fisco e compliance in un posto solo. Demo con dati di esempio.",
+  "workspaces": [
+    "pacchetti/*"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:pagina": "vite build --mode pagina && node scripts/pagina-singola.mjs vicus-tina \"Vicus per Tina\"",
+    "lint": "eslint .",
+    "test": "npm test -w pacchetti/regole-affitti-brevi",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "regole-affitti-brevi": "0.2.0",
+    "@fontsource-variable/inter": "5.3.0",
+    "framer-motion": "14.1.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@tailwindcss/vite": "4.3.3",
+    "@vitejs/plugin-react": "6.1.2",
+    "eslint": "10.12.0",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "eslint-plugin-react-refresh": "0.5.7",
+    "globals": "17.13.0",
+    "tailwindcss": "4.3.3",
+    "vite": "8.3.4"
+  }
+}
